@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="OpenCart Test automation regression suite" parallel="tests" thread-count="2">
+	<listeners>
+		<listener
+			class-name="com.qa.openCart.testlisteners.ExtentReportListener" />
+		<listener
+			class-name="com.qa.openCart.testlisteners.TestAllureListener" />
+			 
+	</listeners>
+	
+	<test name="Login Test">
+		<classes>
+			<class name="com.qa.opencart.tests.LoginPageTest" />
+		</classes>
+	</test>
+	<test name="Accounts test">
+		<classes>
+			<class name="com.qa.opencart.tests.AccountsPageTest"/>
+		</classes>
+	</test>
+	<test name="Product Information test">
+		<classes>
+			<class name="com.qa.opencart.tests.ProductInfoTest"/>
+		</classes>
+	</test>
+	<!-- <test name="Registration test">
+		<classes>
+			<class name="com.qa.opencart.tests.RegisterPageTest"/>
+		</classes>
+	</test> -->
+</suite>
