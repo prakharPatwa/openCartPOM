@@ -75,4 +75,11 @@ public class AccountsPageTest extends BaseTest{
 		Assert.assertTrue(accountsPage.doSearch("iMac"));
 	}
 	
+	@Description("Verify cart ammount in dollar")
+	@Severity(SeverityLevel.BLOCKER)
+	@Test(priority = 8)
+	public void verifyAmountCurrency() {
+		Assert.assertTrue(accountsPage.getAmountCurrencyType());
+	}
+	
 }

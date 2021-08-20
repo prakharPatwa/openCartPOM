@@ -100,4 +100,12 @@ public class AccountsPage extends BasePage{
 		return new ProductInfoPage(driver);
 	}
 	
+	@Step("checking amount in dollars")
+	public boolean getAmountCurrencyType() {
+		if(elementUtil.doGetText(shoppingCart).contains("$")) {
+			return true;
+		}
+		return false;
+	}
+	
 }
