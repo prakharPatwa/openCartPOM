@@ -31,7 +31,7 @@ public class LoginPageTest extends BaseTest{
 		Assert.assertTrue(loginPage.isSignupLinkExist());
 	}
 	
-	@Description("Verify Forgot Password link exist")
+	@Description("Verify Forgot Pwd link exist")
 	@Severity(SeverityLevel.CRITICAL)
 	@Test(priority = 3)
 	public void verifyForgotLinkTest() {
