@@ -30,7 +30,8 @@ public class BaseTest {
 		loginPage = new LoginPage(driver);
 		driver.get(prop.getProperty("url"));
 	}
-	
+
+	//close the browser
 	@AfterTest
 	public void teardown() {
 		driver.quit();
